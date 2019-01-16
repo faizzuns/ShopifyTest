@@ -46,6 +46,9 @@ public class CollectionAdapter extends RecyclerViewAdapter<CustomCollection, Col
             public void onClick(View view) {
                 Intent intent = new Intent(baseView.getApplicationContext(), DetailActivity.class);
                 intent.putExtra("collection_id", customCollection.getId());
+                intent.putExtra("title", customCollection.getTitle());
+                intent.putExtra("url", customCollection.getImage().getSrc());
+                intent.putExtra("desc", customCollection.getBodyHtml());
                 baseView.goToActivity(intent);
             }
         });

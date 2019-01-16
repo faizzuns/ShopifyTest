@@ -16,8 +16,8 @@ public interface ApiServices {
     @GET("products.json?page=1")
     Call<Products> callProducts(@Query("access_token") String token, @Query("ids") String ids);
 
-    @GET("collect.json?page=1")
-    Call<Collects> callCollects(@Query("collection_id") String collectionId,
+    @GET("collects.json?page=1")
+    Call<Collects> callCollects(@Query("collection_id") Long collectionId,
                                 @Query("access_token") String token);
 
 }

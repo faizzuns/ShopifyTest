@@ -71,7 +71,7 @@ public class Variant {
     private String weightUnit;
     @SerializedName("inventory_item_id")
     @Expose
-    private Integer inventoryItemId;
+    private Long inventoryItemId;
     @SerializedName("inventory_quantity")
     @Expose
     private Integer inventoryQuantity;
@@ -253,11 +253,11 @@ public class Variant {
         this.weightUnit = weightUnit;
     }
 
-    public Integer getInventoryItemId() {
+    public Long getInventoryItemId() {
         return inventoryItemId;
     }
 
-    public void setInventoryItemId(Integer inventoryItemId) {
+    public void setInventoryItemId(Long inventoryItemId) {
         this.inventoryItemId = inventoryItemId;
     }
 

@@ -23,12 +23,26 @@
                     android:text="Try Out SAINTEK Eduka 2.0"
                     style="@style/text_title"
                     android:textSize="@dimen/text_small"
-                    android:id="@+id/txt_name"/>
-                <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:text="Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem "
+                    android:id="@+id/txt_title"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_display"
+                    android:text="Product Name : Jimbaran"
+                    android:layout_marginTop="@dimen/size_small"
+                    android:id="@+id/txt_product_name"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size_very_small"
-                    android:id="@+id/txt_description"
-                    android:textSize="@dimen/text_very_small"/>
+                    android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/group_icon" android:layout_height="@dimen/group_icon"
+                        android:src="@drawable/ic_inventory"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="2012"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/size_very_small"
+                        style="@style/text_result"
+                        android:id="@+id/txt_count"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <View

@@ -49,20 +49,5 @@
         <item name="android:background">@drawable/button</item>
     </style>
 
-    <style name="edit_text">
-        <item name="android:layout_width">@dimen/edt_width</item>
-        <item name="android:layout_height">@dimen/edt_height</item>
-        <item name="android:paddingLeft">@dimen/size_small</item>
-        <item name="android:paddingRight">@dimen/size_small</item>
-        <item name="android:layout_margin">@dimen/size_small</item>
-        <item name="android:background">@drawable/box_rounded_primary_dark</item>
-    </style>
-
-    <style name="progress_bar">
-        <item name="android:layout_width">@dimen/progress</item>
-        <item name="android:layout_height">@dimen/progress</item>
-        <item name="android:layout_centerInParent">true</item>
-    </style>
-
 
 </resources>

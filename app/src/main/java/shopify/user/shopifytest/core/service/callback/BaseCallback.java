@@ -50,6 +50,7 @@ public class BaseCallback<T, V extends BaseView> implements Callback<T> {
 
     @Override
     public void onFailure(Call<T> call, Throwable t) {
+        Log.d("connection_response", "onResponse: " + t.getMessage());
         if (view != null) {
             view.displayMessage("Please check your internet connection.");
             callback.onFailed();
