@@ -8,13 +8,13 @@ public class Collect {
 
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private Long id;
     @SerializedName("collection_id")
     @Expose
-    private Integer collectionId;
+    private Long collectionId;
     @SerializedName("product_id")
     @Expose
-    private Integer productId;
+    private Long productId;
     @SerializedName("featured")
     @Expose
     private Boolean featured;
@@ -31,27 +31,27 @@ public class Collect {
     @Expose
     private String sortValue;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getCollectionId() {
+    public Long getCollectionId() {
         return collectionId;
     }
 
-    public void setCollectionId(Integer collectionId) {
+    public void setCollectionId(Long collectionId) {
         this.collectionId = collectionId;
     }
 
-    public Integer getProductId() {
+    public Long getProductId() {
         return productId;
     }
 
-    public void setProductId(Integer productId) {
+    public void setProductId(Long productId) {
         this.productId = productId;
     }
 

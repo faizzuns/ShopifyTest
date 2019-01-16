@@ -1,6 +1,7 @@
 package shopify.user.shopifytest.core.service.callback;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -38,7 +39,8 @@ public class BaseCallback<T, V extends BaseView> implements Callback<T> {
 
     @Override
     public void onResponse(Call<T> call, Response<T> response) {
-        if (response.body() == null) {
+        Log.d("connection_response", "onResponse: " + response.toString());
+        if (response.body() != null) {
             if (view != null || type.equals("hidden")) {
                 callback.onSuccess(response.body());
             }

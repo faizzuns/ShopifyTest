@@ -8,10 +8,10 @@ public class Variant {
 
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private Long id;
     @SerializedName("product_id")
     @Expose
-    private Integer productId;
+    private Long productId;
     @SerializedName("title")
     @Expose
     private String title;
@@ -85,19 +85,19 @@ public class Variant {
     @Expose
     private String adminGraphqlApiId;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getProductId() {
+    public Long getProductId() {
         return productId;
     }
 
-    public void setProductId(Integer productId) {
+    public void setProductId(Long productId) {
         this.productId = productId;
     }
 
