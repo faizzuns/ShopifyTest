@@ -8,6 +8,7 @@ public class Config {
 
     public static final String BASE_URL = "https://api2.edukasystem.id";
     public static final String ACCESS_TOKEN = "";
+    public static final long SPLASH_TIMEOUT = 2500;
     public static HashMap<String, Integer> permissions = getPermissions();
     private static final int internetCode = 1001;
 

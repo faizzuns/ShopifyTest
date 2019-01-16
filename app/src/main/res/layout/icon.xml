@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/frame_icon"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:src="@drawable/shopify"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/app_name"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginTop="@dimen/size_small"
+            android:textStyle="bold|italic"/>
+</LinearLayout>
