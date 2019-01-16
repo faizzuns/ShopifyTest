@@ -10,6 +10,7 @@ import butterknife.BindView;
 import shopify.user.shopifytest.R;
 import shopify.user.shopifytest.core.base.BaseActivity;
 import shopify.user.shopifytest.core.base.BaseLifecycle;
+import shopify.user.shopifytest.feature.home.HomeActivity;
 
 public class SplashscreenActivity extends BaseActivity implements SplashscreenListener.View, BaseLifecycle {
 
@@ -35,7 +36,7 @@ public class SplashscreenActivity extends BaseActivity implements SplashscreenLi
 
     @Override
     public void navigateToHome() {
-//        goToActivity(HomeActivity.class, true);
+        goToActivity(HomeActivity.class, true);
     }
 
     @Override
