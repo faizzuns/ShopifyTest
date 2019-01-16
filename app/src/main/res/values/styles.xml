@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:homeAsUpIndicator">@drawable/back_button</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="content_box">
+        <item name="android:paddingLeft">@dimen/size_small</item>
+        <item name="android:paddingRight">@dimen/size_small</item>
+        <item name="android:paddingTop">@dimen/size_medium</item>
+        <item name="android:paddingBottom">@dimen/size_medium</item>
+        <item name="android:layout_margin">@dimen/size_medium</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:textAlignment" tools:ignore="NewApi">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_display">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_very_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_result">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_very_small</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">@dimen/edt_width</item>
+        <item name="android:layout_height">@dimen/edt_height</item>
+        <item name="android:paddingLeft">@dimen/size_small</item>
+        <item name="android:paddingRight">@dimen/size_small</item>
+        <item name="android:layout_margin">@dimen/size_small</item>
+        <item name="android:background">@drawable/box_rounded_primary_dark</item>
+    </style>
+
+    <style name="progress_bar">
+        <item name="android:layout_width">@dimen/progress</item>
+        <item name="android:layout_height">@dimen/progress</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+</resources>
