@@ -46,7 +46,7 @@ public class ProductAdapter extends RecyclerViewAdapter<Product, ProductAdapter.
         final Product product = list.get(i);
         viewHolder.txtTitle.setText(title);
         viewHolder.txtProductName.setText(product.getTitle());
-        Picasso.with(baseView.getApplicationContext()).load(url).into(viewHolder.iconCollection);
+        Picasso.with(baseView.getApplicationContext()).load(url).placeholder(R.drawable.shopify).into(viewHolder.iconCollection);
 
         int count = 0;
         for (Variant variant : product.getVariants()) {

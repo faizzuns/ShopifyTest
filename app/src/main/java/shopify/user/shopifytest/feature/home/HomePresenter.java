@@ -49,6 +49,7 @@ public class HomePresenter implements HomeListener.Presenter {
         call.enqueue(new BaseCallback<>(new OnCallback<CustomCollections>() {
             @Override
             public void onSuccess(CustomCollections data) {
+                if (view == null) return;
                 view.showList();
                 if (data != null) {
                     list.addAll(data.getCustomCollections());

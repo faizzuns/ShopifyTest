@@ -127,6 +127,6 @@ public class DetailActivity extends BaseActivity implements DetailListener.View,
     public void showBasicCollectionInformation(String title, String desc, String url) {
         txtTitle.setText(title);
         txtDescription.setText(desc);
-        Picasso.with(getApplicationContext()).load(url).into(imgIcon);
+        Picasso.with(getApplicationContext()).load(url).placeholder(R.drawable.shopify).into(imgIcon);
     }
 }

@@ -36,7 +36,7 @@ public class DetailPresenter implements DetailListener.Presenter {
 
     @Override
     public void onResume() {
-
+        view.scrollToTop();
     }
 
     @Override
@@ -52,6 +52,7 @@ public class DetailPresenter implements DetailListener.Presenter {
         call.enqueue(new BaseCallback<>(new OnCallback<Collects>() {
             @Override
             public void onSuccess(Collects data) {
+                if (view == null) return;
                 if (data != null) {
                     String ids = "";
                     for (Collect collect : data.getCollects()) {
@@ -78,6 +79,7 @@ public class DetailPresenter implements DetailListener.Presenter {
             call.enqueue(new BaseCallback<>(new OnCallback<Products>() {
                 @Override
                 public void onSuccess(Products data) {
+                    if (view == null) return;
                     if (data != null) {
                         list.addAll(data.getProducts());
                         adapter.refreshData(list);

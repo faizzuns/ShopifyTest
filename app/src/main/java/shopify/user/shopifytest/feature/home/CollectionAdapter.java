@@ -39,7 +39,7 @@ public class CollectionAdapter extends RecyclerViewAdapter<CustomCollection, Col
 
         viewHolder.txtName.setText(customCollection.getTitle());
         viewHolder.txtDescription.setText(customCollection.getBodyHtml());
-        Picasso.with(baseView.getApplicationContext()).load(customCollection.getImage().getSrc()).into(viewHolder.iconCollection);
+        Picasso.with(baseView.getApplicationContext()).load(customCollection.getImage().getSrc()).placeholder(R.drawable.shopify).into(viewHolder.iconCollection);
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
